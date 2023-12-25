@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auth0 Google Login</title>
+</head>
+<body>
+  <h1>Auth0 Google Login</h1>
+  <button id="login">Log In with Google</button>
+  <button id="logout" style="display: none;">Log Out</button>
+
+  <script src="https://cdn.auth0.com/js/auth0/9.16/auth0.min.js"></script>
+  <script>
+    var auth0 = new Auth0({
+      domain: 'your-auth0-domain.auth0.com',
+      clientID: 'your-auth0-client-id',
+      responseType: 'token id_token',
+      redirectUri: 'http://your-app-callback-url.com',
+    });
+
+    var loginButton = document.getElementById('login');
+    var logoutButton = document.getElementById('logout');
+
+    loginButton.addEventListener('click', function() {
+      auth0.authorize({ connection: 'google-oauth2' });
+    });
+
+    logoutButton.addEventListener('click', function() {
+      auth0.logout();
+    });
+
+    auth0.parseHash(function(err, authResult) {
+      if (authResult && authResult.accessToken && authResult.idToken) {
+        // User is logged in
+        loginButton.style.display = 'none';
+        logoutButton.style.display = 'block';
+      } else if (err) {
+        console.log(err);
+      }
+    });
+  </script>
+</body>
+</html>
