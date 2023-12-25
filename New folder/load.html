@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EBE7E7;
+}
+
+svg {
+  width: 25vw;
+  height: 100vh;
+}
+
+/* SMOKE */
+#smoke-1 {
+  stroke-dasharray: 0, 10;
+  animation: smoke 6s ease infinite;
+}
+
+#smoke-2 {
+  stroke-dasharray: 0, 10;
+  animation: smoke 6s 0.5s ease infinite;
+}
+
+@keyframes smoke {
+  0% { stroke-dasharray: 0, 10; }
+  50% { stroke-dasharray: 10, 0; }
+  100% { stroke-dasharray: 10, 0; opacity: 0; }
+}
+
+/* WRITING */
+#line-1 {
+  opacity: 0;
+  animation: writing 0.5s linear forwards;
+}
+
+#line-2 {
+  opacity: 0;
+  animation: writing 0.5s 1s linear forwards;
+}
+
+#line-3 {
+  opacity: 0;
+  animation: writing 0.5s 1.5s linear forwards;
+}
+
+#line-4 {
+  opacity: 0;
+  animation: writing 0.5s 2s linear forwards;
+}
+
+@keyframes writing {
+  0% { width: 0px; opacity: 1;}
+  100% { width: 14px; opacity: 1;}
+}
+.typed1 {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 1.5s steps(20, end) forwards, blinking 1s infinite;
+  position: absolute;
+  font-family: monospace;
+  color: hsla(180,90%,55%,0.7);
+text-shadow: -2px 2px 10px hsla(180,90%,55%,0.7),
+             -6px 6px 5px rgba(0, 0, 0, 0.562);
+             font-weight:550;
+             font-size:17px;
+             margin-bottom:23.5vh;
+}
+
+.typed2 {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 1.5s steps(20, end) forwards, blinking 1s infinite;
+  position: absolute;
+  font-family: monospace;
+  color: hsla(180,90%,55%,0.7);
+text-shadow: -2px 2px 10px hsla(180,90%,55%,0.7),
+             -6px 6px 5px rgba(0, 0, 0, 0.562);
+             font-weight:550;
+             font-size:17px;
+             margin-bottom:11.5vh;
+}
+  
+.typed3 {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 1.5s steps(20, end) forwards, blinking 1s infinite;
+  position: absolute;
+  font-family: monospace;
+  color: hsla(180,90%,55%,0.7);
+text-shadow: -2px 2px 10px hsla(180,90%,55%,0.7),
+             -6px 6px 5px rgba(0, 0, 0, 0.562);
+             font-weight:550;
+             font-size:17px;
+             margin-bottom:4.5vh;
+}
+
+.typed4 {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 1.5s steps(20, end) forwards, blinking 1s infinite;
+  position: absolute;
+  font-family: monospace;
+  color: hsla(180,90%,55%,0.7);
+text-shadow: -2px 2px 10px hsla(180,90%,55%,0.7),
+             -6px 6px 5px rgba(0, 0, 0, 0.562);
+             font-weight:550;
+             font-size:17px;
+             margin-bottom:-2.5vh;
+}
+
+.typed5 {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 1.5s steps(20, end) forwards, blinking 1s infinite;
+  position: absolute;
+  font-family: monospace;
+  color: hsla(180,90%,55%,0.7);
+text-shadow: -2px 2px 10px hsla(180,90%,55%,0.7),
+             -6px 6px 5px rgba(0, 0, 0, 0.562);
+             font-weight:550;
+             font-size:17px;
+             margin-bottom:-9.5vh;
+}
+
+.typed6 {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 1.5s steps(20, end) forwards, blinking 1s infinite;
+  position: absolute;
+  font-family: monospace;
+  color: hsla(180,90%,55%,0.7);
+text-shadow: -2px 2px 10px hsla(180,90%,55%,0.7),
+             -6px 6px 5px rgba(0, 0, 0, 0.562);
+             font-weight:550;
+             font-size:17px;
+             margin-bottom:-16.5vh;
+}
+
+.typed7 {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 1.5s steps(20, end) forwards, blinking 1s infinite;
+  position: absolute;
+  font-family: monospace;
+  color: hsla(180,90%,55%,0.7);
+text-shadow: -2px 2px 10px hsla(180,90%,55%,0.7),
+             -6px 6px 5px rgba(0, 0, 0, 0.562);
+             font-weight:550;
+             font-size:17px;
+             margin-bottom:-23.5vh;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 13% }
+}
+
+@keyframes blinking {
+  0% {border-color: transparent}
+  50% {border-color: black}
+  100% {border-color: transparent}
+}
+
+    </style>
+</head>
+<body>
+   <!-- Designed with Figma -->
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="study">
+    <rect width="64" height="64"/>
+    <g id="laptop">
+    <rect id="laptop-base" x="6.5" y="25" width="52" height="25" fill="#F3F3F3" stroke="#453F3C" stroke-width="2"/>
+    <rect id="laptop-screen" x="7.5" y="14" width="50" height="33" fill="#5A524E" stroke="#453F3C" stroke-width="2"/>
+   
+    <p class="typed1">CodeUpShifter.com</p>
+    <p class="typed2">.Learn Html</p>
+    <p class="typed3">.Learn CSS</p>
+    <p class="typed4">.Learn JavaScript</p>
+    <p class="typed5">.Learn C++</p>
+    <p class="typed6">.Learn Python</p>
+
+</g>
+    </g>
+    </svg>
+    
+</body>
+</html>
